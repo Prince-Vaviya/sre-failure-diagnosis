@@ -1,0 +1,67 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+wheels/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# uv
+.uv/
+
+# Distribution / packaging
+MANIFEST
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+.pytype/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Docker
+*.log
+
+# uv lock (optional — remove this line if you want to commit uv.lock)
+# uv.lock

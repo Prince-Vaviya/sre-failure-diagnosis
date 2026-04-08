@@ -1,0 +1,16 @@
+spec_version: 1
+name: sre_failure_diagnosis
+type: space
+runtime: fastapi
+app: server.app:app
+port: 8000
+description: RL environment for SRE incident diagnosis using logs, metrics, and alerts.
+tags:
+  - openenv
+  - sre
+  - reinforcement-learning
+  - incident-response
+env:
+  API_BASE_URL: ${API_BASE_URL}
+  MODEL_NAME: ${MODEL_NAME}
+  HF_TOKEN: ${HF_TOKEN}
