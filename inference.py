@@ -5,7 +5,7 @@ MANDATORY
 - Before submitting, ensure the following variables are defined in your environment configuration:
     API_BASE_URL   The API endpoint for the LLM.
     MODEL_NAME     The model identifier to use for inference.
-    HF_TOKEN       Your Hugging Face / API key.
+    API_KEY        Your API key.
     LOCAL_IMAGE_NAME The name of the local image to use for the environment if you are using from_docker_image()
                      method
 
@@ -65,7 +65,7 @@ from sre_failure_diagnosis.tasks import TASKS, SreDiagnosisTask
 
 API_BASE_URL = os.getenv("API_BASE_URL") or "https://router.huggingface.co/v1"
 MODEL_NAME = os.getenv("MODEL_NAME") or "Qwen/Qwen2.5-72B-Instruct"
-API_KEY = os.getenv("HF_TOKEN")
+API_KEY = os.getenv("API_KEY")
 BENCHMARK = os.getenv("SRE_FAILURE_DIAGNOSIS_BENCHMARK", "sre_failure_diagnosis")
 MAX_STEPS = 1
 SUCCESS_SCORE_THRESHOLD = 1.0
