@@ -13,7 +13,8 @@ except ImportError:
 
 
 def clamp_score(value: float) -> float:
-    return max(0.0, min(1.0, round(value, 4)))
+    """Return a score strictly between 0 and 1 (exclusive on both ends)."""
+    return max(0.0001, min(0.9999, round(value, 4)))
 
 
 def grade_task(
